@@ -1,0 +1,126 @@
+@import 'variables.scss';
+html{
+    margin:0;
+    *{
+        box-sizing: border-box;
+    }
+}
+.ca {
+    display:grid;
+    &-header {
+        background-color: $RavnBlack;
+        color: white;
+        height: 3.2rem;
+        display: flex;
+        align-items: center;
+        padding:0 2rem;
+    }
+}
+.left-nav
+{
+
+    width: 18.5rem;
+    border-right: 1px solid rgba($TextLigth,.23);
+    overflow-y: auto;
+    position: fixed;
+    height: calc(100vh - 3.2rem);
+    h3{
+        font-family:$familyprimary;
+        font-size:1rem;
+        color:$TextDark;
+    }
+    p{
+        font-family:$familysecondary;
+        font-size:.8rem;
+        color:$TextLigth;
+    }
+    &::-webkit-scrollbar-track
+    {   
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	    background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar
+    {
+	    width: 5px;
+	    background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+	    background-color: #000000;
+	    border: 2px solid #555555;
+    }
+
+}
+h4,h3,p{
+    margin:0;
+}
+.card{
+    padding:.56rem  1rem;
+    border-bottom: 1px solid rgba($TextLigth,.23);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration:none ;
+    svg
+    {
+        margin-left: 1rem;
+        color:$TextDark;
+    }
+}
+
+.Loading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 17px;
+    font-family:$familyprimary;
+    color:$TextLigth;
+    svg{
+        margin-right: .5rem;
+    }
+}
+.Error{
+    text-align: center;
+    font-size: 17px;
+    color:$TextEmphasise;
+    padding:1rem 0;
+}
+.main-content
+{
+    padding-left: 18.5rem;
+}
+
+.contenedor{
+    padding:1rem 15%;
+    h3{
+        font-family: $familyprimary;
+        margin-bottom: .3rem;
+    }
+    .box{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+}
+.Item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($TextLigth,.23);
+    padding:.8rem 0;
+}
+.Item1{
+    color:$TextLigth;
+    font-family: $familyprimary;
+    font-size:17px;
+}
+.Item2{
+    color:$TextDark;
+    font-family: $familyprimary;
+    font-size:17px;
+    text-transform: capitalize;
+}
