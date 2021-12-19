@@ -9,6 +9,7 @@ import LeftNavLayout from './Components/Layouts/left-nav-layout';
 import { useQuery } from '@apollo/client';
 import { ALLPEOPLE_QUERY } from './Querys/allPeople';
 import { useEffect, useState } from 'react';
+import Home from './View/Home/Home';
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
     <LeftNavLayout data={completeData} loading={loading} error={error}></LeftNavLayout>
     </div>
     <Routes>
+        <Route path="/" element={<Home/>}/>
         <Route path="/:id" element={<People/>}/>
     </Routes>
     </div>
